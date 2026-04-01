@@ -1,0 +1,51 @@
+.product-detail-page { max-width: 1200px; margin: 0 auto; padding: 88px 24px 80px; }
+.product-detail-layout { display: flex; gap: 48px; margin-bottom: 60px; }
+.product-detail-image-section { position: relative; flex: 0 0 480px; }
+.product-detail-image { padding: 24px; position: sticky; top: 96px; }
+.product-detail-image img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-md); }
+.detail-discount-badge { position: absolute; top: 36px; left: 36px; background: var(--primary); color: white; font-size: 0.8rem; font-weight: 700; padding: 6px 14px; border-radius: 10px; }
+.wishlist-btn { position: absolute; top: 36px; right: 36px; width: 48px; height: 48px; border-radius: 50%; background: var(--glass-bg); backdrop-filter: blur(12px); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.wishlist-btn:hover { transform: scale(1.1); }
+.wishlist-btn.active { background: rgba(239, 68, 68, 0.08); border-color: rgba(239, 68, 68, 0.2); }
+.product-detail-info { flex: 1; }
+.product-detail-category { display: inline-flex; align-items: center; gap: 4px; font-size: 0.8rem; color: var(--primary); font-weight: 600; cursor: pointer; margin-bottom: 8px; padding: 4px 12px; background: var(--primary-light); border-radius: 20px; }
+.product-detail-name { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; letter-spacing: -0.02em; }
+.product-detail-rating { display: flex; align-items: center; gap: 6px; margin-bottom: 20px; font-weight: 600; font-size: 0.9rem; }
+.product-detail-price-block { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.detail-price { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; color: var(--text-main); }
+.detail-mrp { font-size: 1.1rem; color: var(--text-muted); text-decoration: line-through; }
+.detail-save { font-size: 0.85rem; color: var(--primary); font-weight: 600; background: var(--primary-light); padding: 4px 12px; border-radius: 20px; }
+.product-detail-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+.product-detail-weights { margin-bottom: 24px; }
+.product-detail-weights h3 { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.weight-options { display: flex; gap: 10px; flex-wrap: wrap; }
+.weight-option { padding: 10px 20px; background: var(--surface); border: 2px solid var(--border); border-radius: 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+.weight-option:hover { border-color: var(--primary); color: var(--primary); }
+.weight-option.active { background: var(--primary); color: white; border-color: var(--primary); box-shadow: 0 4px 12px rgba(11, 140, 76, 0.25); }
+.product-detail-qty { margin-bottom: 28px; }
+.product-detail-qty h3 { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.qty-selector { display: inline-flex; align-items: center; gap: 0; border: 2px solid var(--border); border-radius: 14px; overflow: hidden; }
+.qty-selector button { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; transition: background 0.2s ease; color: var(--text-main); }
+.qty-selector button:hover { background: var(--primary-light); color: var(--primary); }
+.qty-selector span { min-width: 44px; text-align: center; font-weight: 700; font-size: 1.1rem; font-family: 'Outfit', sans-serif; }
+.detail-add-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 32px; font-size: 1.05rem; margin-bottom: 32px; }
+.store-availability { margin-top: 8px; }
+.store-availability h3 { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+.store-availability h3 svg { color: var(--primary); }
+.store-avail-list { display: flex; flex-direction: column; gap: 10px; }
+.store-avail-card { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.store-avail-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(11, 140, 76, 0.1); }
+.store-avail-card.active { border-color: var(--primary); background: rgba(11, 140, 76, 0.04); }
+.store-avail-name { font-weight: 600; font-size: 0.88rem; margin-bottom: 4px; }
+.store-avail-meta { display: flex; gap: 14px; }
+.store-avail-meta span { display: flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted); }
+.store-avail-price { text-align: right; }
+.store-avail-price-val { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1rem; display: block; }
+.store-avail-mrp { font-size: 0.75rem; color: var(--text-muted); text-decoration: line-through; }
+.store-avail-stock { font-size: 0.7rem; font-weight: 600; color: var(--primary); }
+.store-avail-stock.out { color: var(--danger); }
+.related-section { margin-top: 20px; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.loading-skeleton { width: 100%; height: 400px; background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: var(--radius-lg); }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@media (max-width: 768px) { .product-detail-layout { flex-direction: column; gap: 24px; } .product-detail-image-section { flex: none; position: static; } .product-detail-image { position: static; } .product-detail-name { font-size: 1.5rem; } .detail-price { font-size: 1.5rem; } }

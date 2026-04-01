@@ -1,0 +1,25 @@
+.store-page { max-width: 1400px; margin: 0 auto; padding: 88px 24px 40px; }
+.store-layout { display: flex; gap: 24px; height: calc(100vh - 120px); }
+.store-sidebar { width: 420px; flex-shrink: 0; display: flex; flex-direction: column; }
+.store-sidebar-title { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; }
+.store-search { position: relative; margin-bottom: 16px; }
+.store-search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+.store-search input { width: 100%; padding: 14px 14px 14px 44px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9rem; outline: none; transition: all 0.2s ease; }
+.store-search input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-light); }
+.store-list { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding-right: 8px; }
+.store-card { display: flex; gap: 14px; padding: 16px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; }
+.store-card:hover { transform: translateY(-3px); box-shadow: 0 16px 32px rgba(11, 140, 76, 0.1); }
+.store-card.active { border-color: var(--primary); background: rgba(11, 140, 76, 0.04); }
+.store-card-img { width: 80px; height: 80px; border-radius: var(--radius-sm); overflow: hidden; flex-shrink: 0; }
+.store-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.store-card-info { flex: 1; min-width: 0; }
+.store-card-name { font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.store-card-address { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.store-card-meta { display: flex; gap: 12px; flex-wrap: wrap; }
+.store-meta-item { display: flex; align-items: center; gap: 4px; font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
+.store-meta-item svg { color: var(--primary); }
+.store-card-phone { font-size: 0.75rem; color: var(--text-muted); display: flex; align-items: center; gap: 4px; margin-top: 6px; }
+.store-selected-badge { position: absolute; top: 12px; right: 12px; background: var(--primary); color: white; font-size: 0.65rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+.store-map-container { flex: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); }
+.store-map { width: 100%; height: 100%; background: #e8f0e8; }
+@media (max-width: 768px) { .store-layout { flex-direction: column-reverse; height: auto; } .store-sidebar { width: 100%; } .store-map-container { height: 300px; } }

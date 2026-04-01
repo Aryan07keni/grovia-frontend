@@ -1,0 +1,57 @@
+.payment-page { max-width: 1100px; margin: 0 auto; padding: 88px 24px 40px; position: relative; }
+.payment-content { position: relative; z-index: 10; }
+.payment-title { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 24px; }
+.payment-layout { display: flex; gap: 28px; }
+.payment-left { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.payment-section { padding: 28px; }
+.payment-section h2 { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.payment-section h2 svg { color: var(--primary); }
+.saved-addresses { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.address-card { padding: 14px 18px; border: 2px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: all 0.3s ease; }
+.address-card:hover { border-color: var(--primary); }
+.address-card.active { border-color: var(--primary); background: var(--primary-light); }
+.address-label { display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 4px; color: var(--primary); }
+.address-text { font-size: 0.82rem; color: var(--text-muted); }
+.new-address-form h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 14px; color: var(--text-muted); }
+.form-row { margin-bottom: 12px; }
+.form-row input, .form-row-double input, .card-form input, .upi-section input { width: 100%; padding: 14px 16px; background: rgba(244, 247, 245, 0.8); border: 1px solid var(--border); border-radius: 12px; font-size: 0.9rem; outline: none; transition: all 0.2s ease; color: var(--text-main); }
+.form-row input:focus, .form-row-double input:focus, .card-form input:focus, .upi-section input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-light); background: white; }
+.form-row-double { display: flex; gap: 12px; margin-bottom: 12px; }
+.add-addr-btn { margin-top: 4px; padding: 10px 24px; font-size: 0.85rem; }
+.payment-methods { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.payment-method { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border: 2px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: all 0.3s ease; }
+.payment-method:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(11, 140, 76, 0.08); }
+.payment-method.active { border-color: var(--primary); background: var(--primary-light); }
+.pm-icon { color: var(--primary); flex-shrink: 0; }
+.pm-name { display: block; font-weight: 700; font-size: 0.9rem; }
+.pm-desc { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.upi-section { display: flex; flex-direction: column; gap: 12px; }
+.upi-apps { display: flex; gap: 10px; }
+.upi-app-btn { padding: 10px 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+.upi-app-btn:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+.card-form { display: flex; flex-direction: column; gap: 12px; }
+.payment-right { width: 380px; flex-shrink: 0; }
+.order-summary-card { padding: 28px; position: sticky; top: 96px; }
+.order-summary-card h2 { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; }
+.summary-items { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.summary-item { display: flex; justify-content: space-between; align-items: flex-start; }
+.summary-item-name { font-size: 0.85rem; font-weight: 500; display: block; }
+.summary-item-qty { font-size: 0.72rem; color: var(--text-muted); }
+.summary-item-price { font-weight: 600; font-size: 0.85rem; flex-shrink: 0; }
+.summary-breakdown { display: flex; flex-direction: column; gap: 12px; }
+.summary-row { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.summary-row span:last-child { font-weight: 600; }
+.summary-row.total { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; padding-top: 16px; border-top: 2px solid var(--border); }
+.place-order-btn { width: 100%; margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 18px; font-size: 1.05rem; }
+.secure-badge, .delivery-info { display: flex; align-items: center; gap: 8px; justify-content: center; margin-top: 12px; font-size: 0.78rem; color: var(--text-muted); }
+.secure-badge svg, .delivery-info svg { color: var(--primary); }
+/* Order Success */
+.order-success { max-width: 500px; margin: 80px auto; padding: 60px 40px; text-align: center; position: relative; z-index: 10; animation: fadeInUp 0.6s ease; }
+.success-check { width: 80px; height: 80px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; animation: scaleIn 0.4s ease 0.2s both; }
+.order-success h1 { font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+.success-id { color: var(--primary); font-weight: 700; margin-bottom: 8px; }
+.success-msg { color: var(--text-muted); margin-bottom: 28px; }
+.success-actions { display: flex; gap: 12px; justify-content: center; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scaleIn { from { transform: scale(0); } to { transform: scale(1); } }
+@media (max-width: 768px) { .payment-layout { flex-direction: column; } .payment-right { width: 100%; } .order-summary-card { position: static; } .success-actions { flex-direction: column; } }
